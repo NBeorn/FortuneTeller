@@ -142,7 +142,7 @@ namespace FortuneTeller
 
             //More formatting
             Console.WriteLine("\n\nThis is your fortune: \n\n");
-            Console.WriteLine(firstName + " " + lastName + " will retire in only " + age + " years with $" + birthMonth + ".00 in the bank, a vacation home in " + vacationHome + ", and a " + favoriteColor + "to get around.");
+            Console.WriteLine(firstName + " " + lastName + " will retire in only " + age + " years with $" + birthMonth + ".00 in the bank, a vacation home in " + vacationHome + ", and a " + favoriteColor + " to get around.");
         }
     }
 }
