@@ -33,6 +33,15 @@ namespace FortuneTeller
             Console.WriteLine("Please enter your age. And don't ask for mine!");
             int age = int.Parse(Console.ReadLine().Trim());
 
+            if (age % 2 == 0)
+            {
+                age = 20;
+            }
+            else
+            {
+                age = 15;
+            }
+
             Console.WriteLine("Please enter your birth month as a number. (January = 1, February = 2, etc.)");
             int birthMonth = int.Parse(Console.ReadLine().Trim());
 
@@ -46,7 +55,18 @@ namespace FortuneTeller
                 Console.WriteLine("Now please enter your choice.");
                 favoriteColor = Console.ReadLine();
             }
-            
+
+            Console.WriteLine("How many siblings do you have?");
+            int numberSiblings = int.Parse(Console.ReadLine());
+            numberSiblings.ToString();
+
+            if (numberSiblings == 0)
+            {
+                numberSiblings = "Miami";
+            }
+
+            Console.WriteLine("This is your fortune: \n\n");
+            Console.WriteLine(firstName + " " + lastName + " will retire in only " + age + " years with " + );
         }
     }
 }
