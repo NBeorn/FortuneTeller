@@ -10,7 +10,7 @@ namespace FortuneTeller
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Queen Baba's Fortunes. Please enter your first name.");
+            Console.WriteLine("Welcome to Fortuneteller Baba's. Please enter your first name.");
             string firstName = Console.ReadLine().Trim();
 
             if(firstName.ToLower() == "goku")
@@ -37,7 +37,16 @@ namespace FortuneTeller
             int birthMonth = int.Parse(Console.ReadLine().Trim());
 
             Console.WriteLine("Please enter your favorite ROYGBIV color. Enter 'Help' for a list of options");
-            Console.ReadLine();
+            string help = ("Red\tOrange\tYellow\tGreen\tBlue\tIndigo\tViolet");
+            string favoriteColor = Console.ReadLine();
+
+            if (favoriteColor.ToLower() == "help")
+            {
+                Console.WriteLine(help);
+                Console.WriteLine("Now please enter your choice.");
+                favoriteColor = Console.ReadLine();
+            }
+            
         }
     }
 }
