@@ -79,10 +79,10 @@ namespace FortuneTeller
             {
                 Console.WriteLine(help);
                 Console.WriteLine("Now please enter your choice.");
-                favoriteColor = Console.ReadLine();
+                favoriteColor = Console.ReadLine().ToLower();
             }
 
-            switch(favoriteColor)
+            switch(favoriteColor.ToLower())
             {
                 case "red":
                     favoriteColor = "plane";
